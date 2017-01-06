@@ -9,32 +9,33 @@
 <body>
   <style media="screen">
   h1,p,section,h2{margin-bottom: 0;}
-  table th{text-align: left;}
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+  }
+  table th,table td{
+    padding: 8px 16px;
+    border-right: solid 1px #333;
+  }
+  table tr th:last-child,  table tr td:last-child{
+    border: none;
+  }
+  table th{}
   table td{padding-left: 10px;}
+  table tr:last-child{
+    background-color: #ffff8b;
+  }
   </style>
   <h1>resultCommit</h1>
   <p>Basal metabolism 1700</p>
   <section>
-    <h2><time>1/4</time></h2>
+    <h2><time>january</time></h2>
 <table>
-  <tr><th>Muscle training</th><td>back　arm　Mild</td></tr>
-  <tr><th>result</th><td>-1450(+1050-1700-800)</td></tr>
-  <tr><th>Evaluation</th><td>◎○</td></tr>
-  <tr><th>total</th><td>-1450</td></tr>
+  <tr><th>day</th><th>Muscle training</th><th>result</th><th>Evaluation</th><th>total</th></tr>
+  <tr><td><time>4</time></td><td>back　arm　Mild</td><td>-1450(+1050-1700-800)</td><td>◎○</td><td>-1450</td></tr>
+  <tr><td><time>5</time></td><td>none</td><td>-1560(+950-1700-810)</td><td>◎</td><td>-3010</td></tr>
 </table>
-  </section>
-  <section>
-    <h2><time>1/5</time></h2>
-    <dl>
-      <dt>Muscle training</dt>
-      <dd>none</dd>
-      <dt>result</dt>
-      <dd>-1560(+950-1700-810)</dd>
-      <dt>Evaluation</dt>
-      <dd>◎</dd>
-      <dt>total</dt>
-      <dd>-3010</dd>
-    </dl>
   </section>
 </body>
 </html>
